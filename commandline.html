@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="IntroductionApp">
 <head>
-    <title>CodeFirst:Girls Introductory Course</title>
+    <title>CodeFirst:Girls Hackathon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -30,18 +30,20 @@
                 </div>
                 <div class="sidebar">
                     <ul>
-                        <li><a href="#hard">CSS is Hard</a></li>
-                        <li><a href="#bs">Twitter Bootstrap</a></li>
-                        <li><a href="#forms">Forms</a></li>
+                        <li><a href="#git">Using Git with the command line</a></li>
+                        <li><a href="#nav">Navigating around</a></li>
+                        <li><a href="#intro">Git Intro</a></li>
+                        <li><a href="#adding_files_to_the_repository">Adding and Commiting</a></li>
+                        <li><a href="#pushing">Pushing Code to GitHub</a></li>
                     </ul>
                 </div>
             </div>
             <div id="rightPane" class="col-xs-9">
-                <h1>Using Git with the Command Line</h1>
+                <h1 id="git">Using Git with the Command Line</h1>
                 <p>
                     Remember that Git is a tool developers use to track changes to their code and collaborate with others. You'll need to do all of this at the hackathon - so here's a quick refresher. 
                 </p>
-                <h2>Navigating with the command line</h2>
+                <h2 id="nav">Navigating with the command line</h2>
                 <p>
                     Recall that you can move around the folders on your computer using the command line, and you need to be in the folder that houses your code before you can use Git. 
                 </p>
@@ -183,7 +185,7 @@ Author: Maddie Nosworthy &lt;madeleine@example.com
 Date:   Tue Jul 2 14:19:30 2013 +0100
 
 Created index.html</code></pre>
-                                <h2>Pushing code to Github</h2>
+                                <h2 id="pushing">Pushing code to Github</h2>
                                 <p>Github is a site which will host a git repo online for you, making it easy to collaborate with others. We'll now see how to put some code online.</p>
 
                                 <p>Go to github, login, and click 'Create New Repo' in the top left hand corner.</p>
@@ -202,7 +204,7 @@ $ git push -u origin master</code></pre>
                             <p>You might now be prompted to add your github username and password (if you're doing the https method). If all goes well, when you go to github you should see the <code>first_site</code> folder containing your html file.</p>
                         <h3 id="get_your_site_online_with_github_pages">Get your site online with GitHub Pages</h3>
 
-                        <p>We're now going to use GitHub Pages to publish your <code>first_site</code> folder as a webpage.</p>
+                        <p>We're now going to use GitHub Pages to publish your website folder as a webpage.</p>
 
                         <p>Github will host an html site for free for you, through a service called <a href="http://pages.github.com/">GitHub Pages</a>. There are two possibilities for telling github to make your code into a website:</p>
 
