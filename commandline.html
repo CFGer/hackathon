@@ -151,7 +151,7 @@ $ git status
 [master (root-commit) e91b6be] Created index.html
 0 files changed
 create mode 100644 index.html</code></pre>
-<div class="alert alert-error">
+<div class="alert alert-danger">
 <h4>How to get out of vim</h4>
 
 <p>If you forget to supply a message with the <code>-m</code> tag git will drop you into a text editor (probably vim) so that you can write one. If this happens you will need to do the following:</p>
@@ -163,9 +163,9 @@ create mode 100644 index.html</code></pre>
 
 <li>Press <code>esc</code> then <code>:</code> then <code>wq</code> then <code>Enter</code>.</li>
 
-<li>Never forget your message again…</li>
+<li>Never forget your message again...</li>
 
-<li>… or make a note of these instructions!</li>
+<li>... or make a note of these instructions!</li>
 </ul>
 </div>
 <p>You can check that the commit worked with git status:</p>
@@ -180,7 +180,7 @@ nothing to commit (working directory clean)</code></pre>
 <pre><code>$ git log
 
 commit c63f9bbea211a0240fa1b13287a2aaf5a6d8d81a
-Author: Tom Close &lt;tom.close@example.com<script type="text/javascript">
+Author: Maddie Nosworthy &lt;madeleine@codefirstgirls.org.uk<script type="text/javascript">
 /* <![CDATA[ */
 (function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
 /* ]]> */
@@ -192,74 +192,6 @@ Date:   Tue Jul 2 14:19:30 2013 +0100
 <p>or you can get a nice diagram showing your repo by doing</p>
 
 <pre><code>$ gitk --all</code></pre>
-<div class="exercise alert alert-info"><strong>
-<p>Task:</p>
-</strong>
-<p>Enable your <code>first_site</code> folder as a git repository:</p>
-
-<ol>
-<li>
-<p>Navigate to the <code>first_site</code> folder in the command line</p>
-</li>
-
-<li>
-<p>Type</p>
-
-<pre><code> $ git init</code></pre>
-</li>
-
-<li>
-<p><strong>If you are on a mac</strong>, tell git to ignore your <code>.DS_Store</code> files:</p>
-
-<ol>
-<li>Open Sublime Text and write <code>.DS_Store</code> in a new window.</li>
-
-<li>Save this file as <code>.gitignore</code> in your <code>first_site</code> folder.</li>
-</ol>
-</li>
-
-<li>
-<p>Do a git status to see what it says</p>
-
-<pre><code> $ git status</code></pre>
-</li>
-
-<li>
-<p>Commit your changes to the repository:</p>
-
-<pre><code> $ git add --all
- $ git commit -m "Created index.html"</code></pre>
-</li>
-
-<li>
-<p>Do a git status and then a git log to see what has happened:</p>
-
-<pre><code> $ git status
- $ git log</code></pre>
-</li>
-
-<li>
-<p>Make some change to index.html (in Sublime Text)</p>
-</li>
-
-<li>
-<p>Go back to the command line and do a git status:</p>
-
-<pre><code> $ git status</code></pre>
-</li>
-
-<li>
-<p>Add and commit your changes but forget the <code>-m</code>:</p>
-
-<pre><code> $ git add --all
- $ git commit</code></pre>
-</li>
-
-<li>
-<p>Use the warning above to add you commit message and escape from vim</p>
-</li>
-</ol>
-</div>
     </div>
                 </div>
             </div>
