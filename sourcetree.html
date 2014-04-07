@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html ng-app="IntroductionApp">
+<head>
+    <title>CodeFirst:Girls Hackathon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="main.css">
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui/build/angular-ui.min.js"></script>
+    <link rel="stylesheet" href="bower_components/angular-ui/build/angular-ui.min.css">
+
+
+</head>
+<body ng-controller="ContentController">
+    <div class="container" style="padding-top: 20px;">
+        <div class="row">
+            <div id="leftPane" class="col-xs-3">
+                <img class="cfg" src="cfg.png" alt="Code First Girls Logo" />
+                <p class="mini-bio">A short taster session into the fundamental technologies powering the world wide web.</p>
+                <div class="progress progress-danger">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{completedPercentage()}}" aria-valuemin="0" aria-valuemax="100" style="width: {{completedPercentage()}}%;">
+                        <span class="sr-only">{{completedPercentage()}}% Complete</span>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="#st">Using Git with the SourceTree</a></li>
+                        <li><a href="#init">Initialize</a></li>
+                        <li><a href="#adding_files_to_the_repository">Adding and Commiting</a></li>
+                        <li><a href="#publishing">Publishing your site</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="rightPane" class="col-xs-9">
+                <h1 id="st">Using Git with SourceTree</h1>
+                <p>
+                    Remember that Git is a tool developers use to track changes to their code and collaborate with others. You'll need to do all of this at the hackathon - so here's a quick refresher. 
+                </p>
+                <h2 id="init">Initializing your Git Repository</h2>
+                <p>
+                    Before you can use Git with your website you need to initialize it as a Git repository. Fortunately SourceTree makes this really easy.
+                </p>
+                <p>
+                    <ol>
+                        <li>
+                            Open SourceTree
+                        </li>
+                        <li>
+                            <code>File > New/Clone</code>
+                            <br />
+                            <img src="assets/filenew.png">
+                        </li>
+                        <li>
+                            Create new Repository
+                        </li>
+                        <li>
+                            Select Git as the Repository Type
+                        </li>
+                        <li>
+                            Browse to your folder in Destination Path 
+                            <br />
+                            <img src="assets/create.png">
+                        </li>
+                    </ol>
+                </p>
+                <h2 id="adding_files_to_the_repository">Adding and Committing Files</h2>
+                <p>
+                    Recall that taking a snapshot of your code is actualy a two stage process, the first being add (selecting the files to snapshot) and the second being commit (saving the state of the files).
+                </p>
+                <ol>
+                    <li>
+                        Select the files you want to add one by one from the bottom pane
+                    </li>
+                    <li>
+                        Hit add for each
+                    </li>
+                    <li>
+                        Select commit from the top bar
+                        <br />
+                        <img src="assets/addcommit.png">
+                    </li>
+                    <li>
+                         Type a commit message and hit commit
+                    </li>
+                </ol>
+                <h2>
+                    Pushing your Code to GitHub
+                </h2>
+                <p>
+                    Recall that we now have our Git repository setup, but it is only on our local machine. We'd ideally like to host it on the Internet. Enter GitHub.
+                </p>
+                <p>
+                    GitHub let you publicy host your Git repositories for all to see, you can pay to make them private if you want too. We'll use GitHub to host our code and eventually publish it as a website.
+                </p>
+                <ol>
+                    <li>
+                        Sign in to your GitHub account
+                    </li>
+                    <li>
+                        Create a new repository
+                        <br />
+                        <img src="assets/new.png">
+                    </li>
+                    <li>
+                        Copy the link this generates from the 'HTTP' box
+                    </li>
+                    <li>
+                        Right click Remotes from the left hand pane
+                        <br />
+                        <img src="assets/remote.png">
+                    </li>
+                    <li>
+                        Create new remote called origin
+                    </li>
+                    <li>
+                        Paste the URL from GitHub into the URL / Path
+                        <br />
+                        <img src="assets/origin.png">
+                    </li>
+                    <li>
+                        Push to GitHub
+                        <br />
+                        <img src="assets/pushing.png">
+                    </li>
+                </ol>
+                    <h2 id="publishing">
+                        Publishing your Site!
+                    </h2>
+                    <p>
+                        We've now got our code online, but this isn't a website yet! We'd love to be able to show people our creations, right? Fortunately we're only one step off being online!
+                    </p>
+                    <ol>
+                        <li>
+                            Push to GitHub again, but this time change master to gh-pages
+                            <br />
+                            <img src="assets/pages.png">
+                        </li>
+                        <li>
+                            Tick the tracking checkbox!
+                            <br />
+                            <img src="assets/tracking.png">
+                        </li>
+
+                    </ol>
+                <h2>Voila, your site should be online!</h2>
+                <p>
+                    Your website should now be online at: <code>http://username.github.io/repository_name</code>
+                </p>
+            </div> <!-- right pane -->
+        </div><!-- row -->
+    </div><!-- container -->
+    <script type="text/javascript" src="controllers.js"></script>
+    <script type="text/javascript" src="directives.js"></script>
+</body>
+</html>
