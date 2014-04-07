@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="IntroductionApp">
+    <head>
+        <title>CodeFirst:Girls Introductory Course</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="main.css">
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+        <script src="bower_components/angular-route/angular-route.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-ui/build/angular-ui.min.js"></script>
+        <link rel="stylesheet" href="bower_components/angular-ui/build/angular-ui.min.css">
+
+
+    </head>
+    <body ng-controller="ContentController">
+        <div class="container" style="padding-top: 20px;">
+            <div class="row">
+                <div id="leftPane" class="col-xs-3">
+                        <img class="cfg" src="cfg.png" alt="Code First Girls Logo" />
+                        <p class="mini-bio">A short taster session into the fundamental technologies powering the world wide web.</p>
+                        <div class="progress progress-danger">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="{{completedPercentage()}}" aria-valuemin="0" aria-valuemax="100" style="width: {{completedPercentage()}}%;">
+                                <span class="sr-only">{{completedPercentage()}}% Complete</span>
+                            </div>
+                        </div>
+                        <div class="sidebar">
+                            <ul>
+                                <li><a href="#hard">CSS is Hard</a></li>
+                                <li><a href="#bs">Twitter Bootstrap</a></li>
+                                <li><a href="#forms">Forms</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div id="rightPane" class="col-xs-9">
+                    <h1>Using Git with the Command Line</h1>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="controllers.js"></script>
+        <script type="text/javascript" src="directives.js"></script>
+    </body>
+</html>
