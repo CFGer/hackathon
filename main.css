@@ -6,6 +6,11 @@ a {
     text-decoration: underline;
 }
 
+kbd {
+    background-color: rgba(206, 36, 67, 1);
+    box-shadow: none;
+}
+
 #leftPane li a {
     color: #333;
     text-decoration: none;
@@ -83,13 +88,13 @@ h1 {
 }
 
 h2 {
-    font-weight: 700;
-    font-size: 46px;
+    font-weight: 600;
+    font-size: 38px;
 }
 
 h3 {
     font-weight: 500;
-    font-size: 36px;
+    font-size: 34px;
 }
 
 h4 {
