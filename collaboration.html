@@ -47,6 +47,23 @@
                 <p>
                     You should be able to follow these instructions if you're using SourceTree or the git command line.
                 </p>
+                <p>
+                    Broadly speaking, there are three steps to blisful collaboration:
+                    <ol>
+                        <li>
+                            Add team as collaborators on GitHub
+                        </li>
+                        <li>
+                            Everyone Git pull the code
+                        </li>
+                        <li>
+                            Everyone works on seperate parts of the code (or braches)
+                        </li>
+                        <li>
+                            Everyone Git pulls before Git push
+                        </li>
+                    </ol>
+                </p>
                 <h2 id="friends">Adding collaborators</h2>
                 <p>
                     You'll need the GitHub usernames of your team to give them push/pull rights to your repository. 
@@ -56,6 +73,27 @@
                     <br />
                     <img src="assets/settings.png">
                     Then select collaborators and add the usernames of each of your team mates into the box.
+                </p>
+                <h2>Pulling the code</h2>
+                <p>
+                    Once you've all been added as collaborators you'll each get an email from GitHub. Click the link in the email and go to the GitHub repository page. Copy the link from the box on the right. Then:
+                </p>
+                <ol>
+                    <li>Open SourceTree</li>
+                    <li><code>File -> New/Clone</code></li>
+                    <li>Paste the URL into the URL box and hit clone</li>
+                    <br />
+                    <img src="assets/clone.png">
+                </ol>
+                <h2>Collaborating</h2>
+                <p>
+                    Now all members of your team have access to the GitHub, you only need to remeber to pull before you push. 
+                </p>
+                <p>
+                    Pulling the code means taking what's on GitHub and bringing in onto your own machine.
+                </p>
+                <p>
+                    Pushing the code means moving your code on your machine up to GitHub. You'll do this when you want to share your code with your team mates. 
                 </p>
                 <div class="tab-pane active" id="3_collaborating_using_github">
     
@@ -91,10 +129,6 @@
 <br>
 <p>You can find out more about these different workflow option from the <a href="http://git-scm.com/book/en/Distributed-Git-Distributed-Workflows">Git book</a>.</p>
     </div>
-    <h2>How to collaborate?</h2>
-    <p>
-        
-    </p>
             </div> <!-- right pane -->
         </div><!-- row -->
     </div><!-- container -->
